@@ -1,0 +1,213 @@
+﻿<Window x:Class="L15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="600">
+    <Grid Background="#FFFDF6ED">
+        <FlowDocumentPageViewer>
+            <FlowDocument>
+
+                <BlockUIContainer Margin="0,0,0,20" TextAlignment="Center">
+                    <Image Source="Data\main.png" Width="600" Height="300" Stretch="Uniform"/>
+                </BlockUIContainer>
+                <!-- Заголовок статьи -->
+                <Paragraph FontSize="24" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,20">
+                    Хорватия: Сокровище Адриатики
+                </Paragraph>
+
+                <!-- Вводный текст -->
+                <Paragraph Margin="0,0,0,20">
+                    Хорватия — это страна, в которой прошлое и настоящее сливаются в удивительной гармонии. С одной стороны, 
+        она знаменита своими средневековыми городами и древними крепостями, с другой — потрясающими пляжами и 
+        природными заповедниками. В этой статье мы погрузимся в очарование Хорватии, раскроем её главные 
+        достопримечательности, традиции и уникальные особенности.
+                </Paragraph>
+
+                <!-- Раздел География и природа -->
+                <Paragraph FontSize="20" FontWeight="Bold" Margin="0,10,0,10">
+                    География и природа
+                </Paragraph>
+                <Paragraph Margin="0,0,0,20">
+                    Хорватия расположена на пересечении Центральной и Юго-Восточной Европы, омывается тёплыми водами 
+        Адриатического моря. Страна известна своим протяженным побережьем и множеством островов (их более 1000!), 
+        что делает её настоящим раем для любителей морских путешествий и пляжного отдыха.
+                </Paragraph>
+
+                <!-- Таблица с регионами -->
+                <Paragraph FontSize="16" FontWeight="Bold" Margin="0,10,0,10">
+                    Основные географические регионы:
+                </Paragraph>
+
+                <BlockUIContainer Margin="0,0,0,20" TextAlignment="Center">
+                    <Image Source="Data\map.png" Width="600" Height="300" Stretch="Uniform"/>
+                </BlockUIContainer>
+
+                <Table CellSpacing="5" Margin="0,0,0,20">
+                    <Table.Columns>
+                        <TableColumn Width="Auto"/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">Регион</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">Описание</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Далмация</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Южный регион с историческими городами и островами, включая Сплит и Дубровник.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Истрия</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Полуостров на севере страны, знаменитый своей итальянской атмосферой и гастрономическими традициями.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Центральная Хорватия</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Район, богатый зелеными долинами и национальными парками, такими как Плитвицкие озёра.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+
+                <!-- Раздел Историческое наследие -->
+                <Paragraph FontSize="20" FontWeight="Bold" Margin="0,10,0,10">
+                    Историческое наследие
+                </Paragraph>
+                <Paragraph Margin="0,0,0,20">
+                    Хорватия обладает богатой историей, которая прослеживается в архитектуре, искусстве и культуре. Страна 
+        была частью многих великих империй, таких как Римская, Византийская и Османская, каждая из которых 
+        оставила свой след в её культуре и архитектуре.
+                </Paragraph>
+
+                <!-- Список достопримечательностей -->
+                <Paragraph FontSize="16" FontWeight="Bold" Margin="0,10,0,10">
+                    Топ исторических достопримечательностей:
+                </Paragraph>
+                <BlockUIContainer>
+                    <UniformGrid Columns="4">
+                        <Image Source="Data\dubrovnik.png" Width="150" Height="100" Stretch="Uniform" Margin="5"/>
+                        <Image Source="Data\split.png" Width="150" Height="100" Stretch="Uniform" Margin="5"/>
+                        <Image Source="Data\pula.png" Width="150" Height="100" Stretch="Uniform" Margin="5"/>
+                        <Image Source="Data\zagreb.png" Width="150" Height="100" Stretch="Uniform" Margin="5"/>
+                    </UniformGrid>
+                </BlockUIContainer>
+                <List MarkerStyle="Decimal" Margin="0,0,0,20">
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Дубровник</Bold> — «Жемчужина Адриатики», город-крепость, внесён в список наследия ЮНЕСКО.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Дворец Диоклетиана в Сплите</Bold> — одна из наиболее сохранившихся римских построек, построенная в 4 веке.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Амфитеатр в Пуле</Bold> — один из крупнейших сохранившихся римских амфитеатров, вмещающий до 23 000 зрителей.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Загребский кафедральный собор</Bold> — готическая жемчужина, строительство которой началось в 13 веке.</Paragraph>
+                    </ListItem>
+                </List>
+
+                <!-- Раздел Природные чудеса -->
+                <Paragraph FontSize="20" FontWeight="Bold" Margin="0,10,0,10">
+                    Природные чудеса
+                </Paragraph>
+                <Paragraph Margin="0,0,0,20">
+                    Хорватия известна своими природными достопримечательностями, многие из которых являются объектами Всемирного наследия.
+                </Paragraph>
+
+                <BlockUIContainer Margin="0,0,0,20" TextAlignment="Center">
+                    <Image Source="Data\nature.png" Width="600" Height="300" Stretch="Uniform"/>
+                </BlockUIContainer>
+                
+                <!-- Таблица с национальными парками -->
+                <Paragraph FontSize="16" FontWeight="Bold" Margin="0,10,0,10">
+                    Национальные парки Хорватии:
+                </Paragraph>
+                <Table CellSpacing="5" Margin="0,0,0,20">
+                    <Table.Columns>
+                        <TableColumn Width="Auto"/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">Национальный парк</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">Особенности</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Hyperlink NavigateUri="https://np-plitvicka-jezera.hr/en/">
+                                        Плитвицкие озёра
+                                    </Hyperlink>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>16 каскадных озёр с бирюзовой водой, окружённых густыми лесами.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Hyperlink NavigateUri="https://www.npkrka.hr/en/">
+                                        Крка
+                                    </Hyperlink>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Водопады и карстовые пещеры, идеальные для прогулок и купания.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Hyperlink NavigateUri="https://www.np-kornati.hr/en/">
+                                        Корнаты
+                                    </Hyperlink>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Архипелаг из 89 островов и рифов, популярный среди любителей яхтинга.</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+
+                <!-- Заключение -->
+                <Paragraph Margin="0,0,0,20">
+                    Хорватия — это страна, которая очаровывает своей природой, историей и культурой. Здесь каждый найдёт 
+        что-то по душе: будь то средневековые крепости, солнечные пляжи или удивительные природные парки.
+                </Paragraph>
+                
+                <BlockUIContainer Margin="0,0,0,20" TextAlignment="Center">
+                    <Image Source="Data\final.png" Width="600" Height="300" Stretch="Uniform"/>
+                </BlockUIContainer>
+            </FlowDocument>
+
+        </FlowDocumentPageViewer>
+    </Grid>
+</Window>
